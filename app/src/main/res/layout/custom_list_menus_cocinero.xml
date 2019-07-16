@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menuClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/viewMenuChef"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/imagen_no_disponible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del plato:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/nameMenuChef"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum"
+                android:textSize="10dp"
+                android:id="@+id/descriptionMenuChef"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_marginRight="15dp"
+                    android:text="Editar"/>
+
+                <Button
+                    android:id="@+id/btn_eliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Eliminar"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/ident_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/ident_user"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/price_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMenuActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREACION DE MENÚ"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre de menú:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edNameMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion de menú:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edDescriptionMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="8"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio de menú:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edPriceMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredientes de menú:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edIngredientsMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="8"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utencilios de menú:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edUtenciliosMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="8"
+                android:scrollbars="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp">
+
+                <CheckBox
+                    android:id="@+id/modality1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domicilios"/>
+
+                <CheckBox
+                    android:id="@+id/modality2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chef en tu casa"/>
+
+                <CheckBox
+                    android:id="@+id/modality3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En la casa del chef"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/multimediaImagenPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <Button
+                    android:id="@+id/addImagePlato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Imagen de tu plato"
+                    android:textColor="@android:color/background_dark"
+                    android:onClick="uploadImageMenu"/>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/viewMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imagen_no_disponible" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/actionMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREAR MENU"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

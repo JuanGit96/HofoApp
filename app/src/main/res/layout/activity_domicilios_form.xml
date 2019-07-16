@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DomiciliosFormActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/domicilios">
+
+
+        <TextView
+            android:id="@+id/name_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arroz con pollo"
+            android:textSize="30sp"
+            android:textColor="@color/cardview_light_background"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/imagen_no_disponible"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FCD500"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/user_calification"
+                    android:layout_width="157dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/imagen_no_disponible" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pepito Perez"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_profileChef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Ver perfil"
+                    android:onClick="goToProfileChef"
+                    android:textColor="@color/cardview_light_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+                    android:textSize="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:id="@+id/descriptionMenuChef"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$20000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:id="@+id/priceMenuChef"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domiciliios"
+            android:textStyle="bold"
+            android:textSize="37sp"
+            android:gravity="center"
+            android:textColor="@color/cardview_light_background"/>
+
+
+        <TextView
+            android:id="@+id/ident_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text=""
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/ident_user"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text=""
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tus datos para realizar tu pedido"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/order_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"
+                />
+
+
+
+            <EditText
+                android:id="@+id/order_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ciudad"
+                android:inputType="text"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+
+            <EditText
+                android:id="@+id/order_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion"
+                android:inputType="text"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+
+
+            <EditText
+                android:id="@+id/order_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono celular"
+                android:inputType="number"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/order_date"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Fecha"
+                    android:inputType="date"
+                    android:backgroundTint="@android:color/background_dark"
+                    android:textColorHint="@android:color/background_dark"
+                    android:clickable="false"/>
+
+                <Button
+                    android:id="@+id/dateOrder_btn"
+                    android:layout_width="35dp"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_date_range_black_24dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/order_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hora"
+                android:inputType="time"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+
+           <!--- <EditText
+                android:id="@+id/order_numberPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Camntidad de personas"
+                android:inputType="number"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comentarios adicionales:"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/order_additionalComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="8"
+                android:scrollbars="vertical"
+                android:backgroundTint="@android:color/background_dark"
+                android:textColorHint="@android:color/background_dark"/>
+
+
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:id="@+id/btn_ordenar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Ordenar"
+                android:textColor="@color/cardview_light_background" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

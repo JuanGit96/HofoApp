@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "664670791999",
+    "firebase_url": "https://hofoapp.firebaseio.com",
+    "project_id": "hofoapp",
+    "storage_bucket": "hofoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664670791999:android:668fa2b2549d9e01",
+        "android_client_info": {
+          "package_name": "com.login.hofo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664670791999-g3t6lb3d4piuq87ihugunpthffkml800.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.login.hofo",
+            "certificate_hash": "00ccba864651a0863be1743a96b7095f8356ab2d"
+          }
+        },
+        {
+          "client_id": "664670791999-uju9daid85uvf5q7pkrf4pf30ik8m3am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyJt0RcMy-6xpSMtEG_UeZdKLu9Mee5Ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664670791999-uju9daid85uvf5q7pkrf4pf30ik8m3am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

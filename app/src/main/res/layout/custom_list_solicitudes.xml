@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/orderClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:background="@color/cardview_shadow_start_color">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comensal:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del comensal"
+                    android:textSize="20sp"
+                    android:id="@+id/nombre_comensal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18/11/1996"
+                    android:textSize="20sp"
+                    android:id="@+id/fecha_orden"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hora:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23:00"
+                    android:textSize="20sp"
+                    android:id="@+id/hora_orden"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <Button
+                    android:id="@+id/btn_aceptar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/cardview_light_background"
+                    android:layout_marginRight="15dp"
+                    android:text="Aceptar"/>
+
+                <Button
+                    android:id="@+id/btn_rechazar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/cardview_light_background"
+                    android:text="Rechazar"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/ident_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/ident_user"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/price_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>
